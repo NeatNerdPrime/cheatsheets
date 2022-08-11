@@ -23,30 +23,30 @@
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <link href='./assets/favicon.png' rel='shortcut icon'>
-<meta content='/rails-models.html' name='app:pageurl'>
+<meta content='/tar.html' name='app:pageurl'>
 
 
-  <title>Rails models cheatsheet</title>
-  <meta content='Rails models cheatsheet' property='og:title'>
-  <meta content='Rails models cheatsheet' property='twitter:title'>
+  <title>tar cheatsheet</title>
+  <meta content='tar cheatsheet' property='og:title'>
+  <meta content='tar cheatsheet' property='twitter:title'>
   <meta content='article' property='og:type'>
 
 
 
-  <meta content='https://assets.devhints.io/previews/rails-models.jpg?t=20220811225657' property='og:image'>
-  <meta content='https://assets.devhints.io/previews/rails-models.jpg?t=20220811225657' property='twitter:image'>
+  <meta content='https://assets.devhints.io/previews/tar.jpg?t=20220811225657' property='og:image'>
+  <meta content='https://assets.devhints.io/previews/tar.jpg?t=20220811225657' property='twitter:image'>
   <meta content='900' property='og:image:width'>
   <meta content='471' property='og:image:height'>
 
 
 
-  <meta content="The one-page guide to Rails models: usage, examples, links, snippets, and more." name="description">
-  <meta content="The one-page guide to Rails models: usage, examples, links, snippets, and more." property="og:description">
-  <meta content="The one-page guide to Rails models: usage, examples, links, snippets, and more." property="twitter:description">
+  <meta content="One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files" name="description">
+  <meta content="One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files" property="og:description">
+  <meta content="One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files" property="twitter:description">
 
 
-<link rel="canonical" href="https://devhints.io/rails-models">
-<meta name="og:url" content="https://devhints.io/rails-models">
+<link rel="canonical" href="https://devhints.io/tar">
+<meta name="og:url" content="https://devhints.io/tar">
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-  <meta content='Rails' property='article:section'>
+  <meta content='CLI' property='article:section'>
 
 
 
@@ -114,9 +114,9 @@ gtag('config','UA-106902774-1');
     "@type": "WebPage",
     "@id": "https://google.com/article"
   },
-  "headline": "Rails models cheatsheet",
-  "image": [ "https://assets.devhints.io/previews/rails-models.jpg?t=20220811225657" ],
-  "description": "The one-page guide to Rails models: usage, examples, links, snippets, and more."
+  "headline": "tar cheatsheet",
+  "image": [ "https://assets.devhints.io/previews/tar.jpg?t=20220811225657" ],
+  "description": "One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files"
 }
 </script>
 <script type='application/ld+json'>
@@ -127,15 +127,15 @@ gtag('config','UA-106902774-1');
     "@type": "ListItem",
     "position": 1,
     "item": {
-      "@id": "https://devhints.io/#rails",
-      "name": "Rails"
+      "@id": "https://devhints.io/#cli",
+      "name": "CLI"
     }
   },{
     "@type": "ListItem",
     "position": 2,
     "item": {
-      "@id": "https://devhints.io/rails-models",
-      "name": "Rails models"
+      "@id": "https://devhints.io/tar",
+      "name": "tar"
     }
   }]
 }
@@ -161,8 +161,8 @@ gtag('config','UA-106902774-1');
       <div class='actions'>
         
 <ul class="social-list social page-actions">
-  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://devhints.io/rails-models.html" target="share"><span class="text"></span></a></li>
-  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=The%20ultimate%20cheatsheet%20for%20Rails%20models.%20https://devhints.io/rails-models.html" target="share"><span class="text"></span></a></li>
+  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://devhints.io/tar.html" target="share"><span class="text"></span></a></li>
+  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=The%20ultimate%20cheatsheet%20for%20tar.%20https://devhints.io/tar.html" target="share"><span class="text"></span></a></li>
   
 </ul>
 
@@ -170,7 +170,7 @@ gtag('config','UA-106902774-1');
         
           <ul class='page-actions'>
             <li class='link github -button hint--bottom' data-hint='Edit this page on GitHub'>
-              <a href='https://github.com/rstacruz/cheatsheets/blob/master/rails-models.md'>
+              <a href='https://github.com/rstacruz/cheatsheets/blob/master/tar.md'>
                 <span class='text -visible'>Edit</span>
               </a>
             </li>
@@ -184,7 +184,7 @@ gtag('config','UA-106902774-1');
 
 <div class='body-area'>
   <header class='main-heading -center' role='banner'>
-    <h1 class='h1'>Rails models <em>cheatsheet</em></h1>
+    <h1 class='h1'>tar <em>cheatsheet</em></h1>
 
     <div class='pubbox' data-js-no-preview>
       
@@ -205,516 +205,72 @@ gtag('config','UA-106902774-1');
   
 
   
+    <div class='intro-content MarkdownBody'>
+      <p>Concatenate, Deflate, Inflate files</p>
+
+    </div>
+  
 
   <main class='post-content MarkdownBody' data-js-main-body data-js-anchors role='main'>
-    <h2 id="generating">Generating</h2>
-
-<h3 id="generating-1">Generating</h3>
-
-<pre><code>$ rails g model User
-</code></pre>
-
-<h2 id="using-models">Using models</h2>
-
-<h3 id="query-methods">Query methods</h3>
-
-<pre><code class="language-ruby">items = Model
-  .where(first_name: 'Harvey')
-  .where('id = 3')
-  .where('id = ?', 3)
-</code></pre>
-
-<pre><code class="language-ruby">  .order(:title)
-  .order(title: :desc)
-  .order("title DESC")
-</code></pre>
-
-<pre><code class="language-ruby">  .reorder(:title)  # discards other .order's
-  .rewhere(...)     # discards other .where's
-</code></pre>
-
-<pre><code class="language-ruby">  .limit(2)
-  .offset(1)
-  .uniq
-</code></pre>
-
-<p>See: <a href="http://devdocs.io/rails/activerecord/querymethods">QueryMethods</a></p>
-
-<h3 id="advanced-query-methods">Advanced query methods</h3>
-
-<pre><code class="language-ruby">items = Model
-  .select(:id)
-  .select([:id, :name])
-</code></pre>
-
-<pre><code class="language-ruby">  .group(:name)   # GROUP BY name
-  .group('name AS grouped_name, age')
-  .having('SUM(price) &gt; 30')  # needs to be chained with .group
-</code></pre>
-
-<pre><code class="language-ruby">  .includes(:user)
-  .includes(user: [:articles])
-</code></pre>
-
-<pre><code class="language-ruby">  .references(:posts)
-  # aka: .where("posts.name = 'foo'").references(:posts)
-</code></pre>
-
-<h3 id="finder-methods">Finder methods</h3>
-
-<pre><code class="language-ruby">item = Model.find(id)
-item = Model.find_by_email(email)
-item = Model.where(email: email).first
-</code></pre>
-
-<pre><code class="language-ruby">Model
-  .exists?(5)
-  .exists?(name: "David")
-</code></pre>
-
-<pre><code class="language-ruby">  .first
-  .last
-  .find_nth(4, [offset])
-</code></pre>
-
-<p>See: <a href="http://devdocs.io/rails/activerecord/findermethods">FinderMethods</a></p>
-
-<h3 id="persistence">Persistence</h3>
-
-<pre><code class="language-ruby">item.new_record?
-item.persisted?
-item.destroyed?
-
-item.serialize_hash
-</code></pre>
-
-<pre><code class="language-ruby">item.save
-item.save!      # Same as above, but raises an Exception
-</code></pre>
-
-<pre><code class="language-ruby">item.update  name: 'John'  # Saves immediately
-item.update! name: 'John'
-</code></pre>
-
-<pre><code class="language-ruby">item.update_column  :name, 'John'  # skips validations and callbacks
-item.update_columns  name: 'John'
-item.update_columns! name: 'John'
-</code></pre>
-
-<pre><code class="language-ruby">item.touch                 # updates :updated_at
-item.touch :published_at
-</code></pre>
-
-<pre><code class="language-ruby">item.destroy
-item.delete  # skips callbacks
-</code></pre>
-
-<pre><code class="language-ruby">Model.create     # Same an #new then #save
-Model.create!    # Same as above, but raises an Exception
-</code></pre>
-
-<p>See: <a href="http://devdocs.io/rails/activerecord/persistence">Persistence</a></p>
-
-<h3 id="attribute-assignment">Attribute Assignment</h3>
-
-<pre><code class="language-ruby">item.attributes                      # #&lt;Hash&gt;
-</code></pre>
-
-<pre><code class="language-ruby">item.attributes = { name: 'John' }   # Merges attributes in. Doesn't save.
-item.assign_attributes name: 'John'  # Same as above
-</code></pre>
-
-<p>See: <a href="http://devdocs.io/rails/activerecord/attributeassignment">AttributeAssignment</a></p>
-
-<h3 id="dirty">Dirty</h3>
-
-<pre><code class="language-ruby">item.changed?
-item.changed             # ['name']
-item.changed_attributes  # { 'name' =&gt; 'Bob' } - original values
-item.changes             # { 'name' =&gt; ['Bob', 'Robert'] }
-item.previous_changes    # available after #save
-item.restore_attributes
-</code></pre>
-
-<pre><code class="language-ruby">item.name = 'Robert'
-item.name_was         # 'Bob'
-item.name_change      # [ 'Bob', 'Robert' ]
-item.name_changed?    # true
-item.name_changed?(from: 'Bob', to: 'Robert')
-</code></pre>
-
-<p>See: <a href="http://devdocs.io/rails/activemodel/dirty">Dirty</a></p>
-
-<h3 id="validations">Validations</h3>
-
-<pre><code class="language-ruby">item.valid?
-item.invalid?
-</code></pre>
-
-<p>See: <a href="http://devdocs.io/rails/activerecord/validations">Validations</a></p>
-
-<h3 id="calculations">Calculations</h3>
-
-<pre><code class="language-ruby">Person.count
-Person.count(:age)    # counts non-nil's
-</code></pre>
-
-<pre><code class="language-ruby">Person.average(:age)
-Person.maximum(:age)
-Person.minimum(:age)
-Person.sum('2 * age')
-</code></pre>
-
-<pre><code class="language-ruby">Person.calculate(:count, :all)
-</code></pre>
-
-<p>Advanced:</p>
-
-<pre><code class="language-ruby">Person.distinct.count
-Person.group(:city).count
-</code></pre>
-
-<p>See: <a href="http://devdocs.io/rails/activerecord/calculations">Calculations</a></p>
-
-<h3 id="dynamic-attribute-based-finders">Dynamic attribute-based finders</h3>
-
-<p class="-setup">Given a field called <code>name</code>:</p>
-
-<pre><code class="language-ruby"># Returns one record
-Person.find_by_name(name)
-Person.find_last_by_name(name)
-Person.find_or_create_by_name(name)
-Person.find_or_initialize_by_name(name)
-</code></pre>
-
-<pre><code class="language-ruby"># Returns a list of records
-Person.find_all_by_name(name)
-</code></pre>
-
-<pre><code class="language-ruby"># Add a bang to make it raise an exception
-Person.find_by_name!(name)
-</code></pre>
-
-<pre><code class="language-ruby"># You may use `scoped` instead of `find`
-Person.scoped_by_user_name
-</code></pre>
-
-<h2 id="associations">Associations</h2>
-
-<h3 id="associations-1">Associations</h3>
-
-<ul>
-  <li><code>belongs_to</code></li>
-  <li><code>has_one</code></li>
-  <li><code>has_many</code></li>
-  <li><code>has_many :through</code></li>
-  <li><code>has_one :through</code></li>
-  <li><code>has_and_belongs_to_many</code></li>
-</ul>
-
-<h3 id="has-many">Has many</h3>
-
-<pre><code class="language-ruby">belongs_to :parent, :foreign_key =&gt; 'parent_id' class_name: 'Folder'
-has_many :folders, :foreign_key =&gt; 'parent_id', class_name: 'Folder'
-
-has_many :comments,                -&gt; { order('posted_on DESC') }
-has_many :comments,    :include    =&gt; :author
-has_many :people,      :class_name =&gt; "Person"
-has_many :people,      :conditions =&gt; "deleted = 0"
-has_many :tracks,                  -&gt; { order(:position) }
-has_many :comments,    :dependent  =&gt; :nullify
-has_many :comments,    :dependent  =&gt; :destroy
-has_many :tags,        :as         =&gt; :taggable
-has_many :reports,     :readonly   =&gt; true
-has_many :subscribers, :through    =&gt; :subscriptions, class_name: "User", :source =&gt; :user
-has_many :subscribers, :finder_sql =&gt;
-    'SELECT DISTINCT people.* ' +
-    'FROM people p, post_subscriptions ps ' +
-    'WHERE ps.post_id = #{id} AND ps.person_id = p.id ' +
-    'ORDER BY p.first_name'
-</code></pre>
-
-<h3 id="belongs-to">belongs to</h3>
-
-<pre><code class="language-ruby">belongs_to :author,
-  :dependent      =&gt; :destroy    # or :delete
-
-  :class_name     =&gt; "Person"
-  :select         =&gt; "*"
-  :counter_cache  =&gt; true
-  :counter_cache  =&gt; :custom_counter
-  :include        =&gt; "Book"
-  :readonly       =&gt; true
-
-  :conditions     =&gt; 'published = true'
-
-  :touch          =&gt; true
-  :touch          =&gt; :authors_last_updated_at
-
-  :primary_key    =&gt; "name"
-  :foreign_key    =&gt; "author_name"
-</code></pre>
-
-<h3 id="many-to-many">Many-to-many</h3>
-
-<p class="-setup">If you have a join model:</p>
-
-<pre data-line="2,3"><code class="language-ruby">class Programmer &lt; ActiveRecord::Base
-  has_many :assignments
-  has_many :projects, :through =&gt; :assignments
-end
-</code></pre>
-
-<pre data-line="2,3"><code class="language-ruby">class Project &lt; ActiveRecord::Base
-  has_many :assignments
-  has_many :programmers, :through =&gt; :assignments
-end
-</code></pre>
-
-<pre data-line="2,3"><code class="language-ruby">class Assignment
-  belongs_to :project
-  belongs_to :programmer
-end
-</code></pre>
-
-<h3 id="many-to-many-habtm">Many-to-many (HABTM)</h3>
-
-<pre><code class="language-ruby">has_and_belongs_to_many :projects
-has_and_belongs_to_many :projects, :include =&gt; [ :milestones, :manager ]
-has_and_belongs_to_many :nations, :class_name =&gt; "Country"
-has_and_belongs_to_many :categories, :join_table =&gt; "prods_cats"
-has_and_belongs_to_many :categories, :readonly =&gt; true
-has_and_belongs_to_many :active_projects, :join_table =&gt; 'developers_projects', :delete_sql =&gt;
-"DELETE FROM developers_projects WHERE active=1 AND developer_id = #{id} AND project_id = #{record.id}"
-</code></pre>
-
-<h3 id="polymorphic-associations">Polymorphic associations</h3>
-
-<pre data-line="2"><code class="language-ruby">class Post
-  has_many :attachments, as: :parent
-end
-</code></pre>
-
-<pre data-line="2"><code class="language-ruby">class Image
-  belongs_to :parent, polymorphic: true
-end
-</code></pre>
-
-<p>And in migrations:</p>
-
-<pre data-line="2"><code class="language-ruby">create_table :images do |t|
-  t.references :post, polymorphic: true
-end
-</code></pre>
-
-<h2 id="validation">Validation</h2>
-
-<h3 id="validation-1">Validation</h3>
-
-<pre class="-setup"><code class="language-ruby">class Person &lt; ActiveRecord::Base
-</code></pre>
-
-<pre data-line="2"><code class="language-ruby">  # Presence
-  validates :name,     presence: true
-</code></pre>
-
-<pre><code class="language-ruby">  # Acceptance
-  validates :terms,    acceptance: true
-</code></pre>
-
-<pre><code class="language-ruby">  # Confirm
-  validates :email,    confirmation: true
-</code></pre>
-
-<pre><code class="language-ruby">  # Unique
-  validates :slug,     uniqueness: true
-  validates :slug,     uniqueness: { case_sensitive: false }
-  validates :holiday,  uniqueness: { scope: :year, message: 'yearly only' }
-</code></pre>
-
-<pre><code class="language-ruby">  # Format
-  validates :code,     format: /regex/
-  validates :code,     format: { with: /regex/ }
-</code></pre>
-
-<pre><code class="language-ruby">  # Length
-  validates :name,     length: { minimum: 2 }
-  validates :bio,      length: { maximum: 500 }
-  validates :password, length: { in: =&gt; 6..20 }
-  validates :number,   length: { is: =&gt; 6 }
-</code></pre>
-
-<pre><code class="language-ruby">  # Include/exclude
-  validates :gender,   inclusion: %w(male female)
-  validates :gender,   inclusion: { in: %w(male female) }
-  validates :lol,      exclusion: %w(xyz)
-</code></pre>
-
-<pre><code class="language-ruby">  # Numeric
-  validates :points,   numericality: true
-  validates :played,   numericality: { only_integer: true }
-  # ... greater_than, greater_than_or_equal_to,
-  # ... less_than, less_than_or_equal_to
-  # ... odd, even, equal_to
-</code></pre>
-
-<pre><code class="language-ruby">  # Validate the associated records to ensure they're valid as well
-  has_many :books
-  validates_associated :books
-</code></pre>
-
-<pre><code class="language-ruby">  # Length (full options)
-  validates :content, length: {
-    minimum:   300,
-    maximum:   400,
-    tokenizer: lambda { |str| str.scan(/\w+/) },
-    too_short: "must have at least %{count} words",
-    too_long:  "must have at most %{count} words" }
-</code></pre>
-
-<pre><code class="language-ruby">  # Multiple
-  validates :login, :email, presence: true
-</code></pre>
-
-<pre><code class="language-ruby">  # Conditional
-  validates :description, presence: true, if: :published?
-  validates :description, presence: true, if: lambda { |obj| .. }
-</code></pre>
-
-<pre><code class="language-ruby">  validates :title, presence: true, on: :save   # :save | :create | :update
-</code></pre>
-
-<pre class="-setup"><code class="language-ruby">end
-</code></pre>
-
-<h3 id="custom-validations">Custom validations</h3>
-
-<pre data-line="2"><code class="language-ruby">class Person &lt; ActiveRecord::Base
-  validate :foo_cant_be_nil
-
-  def foo_cant_be_nil
-    errors.add(:foo, 'cant be nil')  if foo.nil?
-  end
-end
-</code></pre>
-
-<h3 id="errors">Errors</h3>
-
-<pre><code class="language-ruby">record.errors.valid?      # → false
-record.errors             # → { :name =&gt; ["can't be blank"] }
-record.errors.messages    # → { :name =&gt; ["can't be blank"] }
-</code></pre>
-
-<pre><code class="language-ruby">record.errors[:name].any?
-</code></pre>
-
-<h2 id="other-api">Other API</h2>
-
-<h3 id="callbacks">Callbacks</h3>
-
-<ul>
-  <li><a href="http://guides.rubyonrails.org/active_record_validations_callbacks.html">Guides: callbacks</a></li>
-</ul>
-
-<h3 id="mass-updates">Mass updates</h3>
-
-<pre><code class="language-ruby"># Updates person id 15
-Person.update 15, name: "John", age: 24
-Person.update [1,2], [{name: "John"}, {name: "foo"}]
-</code></pre>
-
-<h3 id="joining">Joining</h3>
-
-<pre><code class="language-ruby"># Basic joins
-Student.joins(:schools).where(schools: { type: 'public' })
-Student.joins(:schools).where('schools.type' =&gt; 'public' )
-</code></pre>
-
-<pre><code class="language-ruby"># Multiple associations
-Article.joins(:category, :comments)
-</code></pre>
-
-<pre><code class="language-ruby"># Nested associations
-Article.joins(comments: :guest)
-</code></pre>
-
-<pre><code class="language-ruby"># SQL
-Author.joins(
-  'INNER JOIN posts ' +
-  'ON posts.author_id = authors.id ' +
-  'AND posts.published = "t"'
-)
-</code></pre>
-
-<h3 id="where-interpolation">Where interpolation</h3>
-
-<pre><code class="language-ruby">where('name = ?', 'John')
-where(['name = :name', { name: 'John' }])
-</code></pre>
-
-<h3 id="serialize">Serialize</h3>
-
-<pre data-line="2"><code class="language-ruby">class User &lt; ActiveRecord::Base
-  serialize :preferences
-end
-</code></pre>
-
-<pre><code class="language-ruby">user = User.create(
-  preferences: {
-    'background' =&gt; 'black',
-    'display' =&gt; 'large'
-  }
-)
-</code></pre>
-
-<p>You can also specify a class option as the second parameter that’ll raise an 
-exception if a serialized object is retrieved as a descendant of a class not in 
-the hierarchy.</p>
-
-<pre data-line="3"><code class="language-ruby"># Only Hash allowed!
-class User &lt; ActiveRecord::Base
-  serialize :preferences, Hash
-end
-</code></pre>
-
-<pre><code class="language-ruby"># Reading it raises SerializationTypeMismatch
-user = User.create(preferences: %w(one two three))
-User.find(user.id).preferences
-</code></pre>
-
-<h2 id="other-tricks">Other tricks</h2>
-
-<h3 id="overriding-accessors">Overriding accessors</h3>
-
-<pre data-line="4,8"><code class="language-ruby">class Song &lt; ActiveRecord::Base
-  # Uses an integer of seconds to hold the length of the song
-
-  def length=(minutes)
-    write_attribute(:length, minutes.to_i * 60)
-  end
-
-  def length
-    read_attribute(:length) / 60
-  end
-end
-</code></pre>
-
-<p>See: <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html">http://api.rubyonrails.org/classes/ActiveRecord/Base.html</a></p>
-
-<h2 id="callbacks-1">Callbacks</h2>
-
-<ul>
-  <li>after_initialize</li>
-  <li>before_validation / after_validation</li>
-  <li>before_save / after_save / around_save</li>
-  <li>before_create / after_create / around_create</li>
-  <li>before_update / after_update / around_update</li>
-  <li>before_destroy / after_destroy / around_destroy</li>
-  <li>after_commit</li>
-  <li>after_rollback</li>
-</ul>
-
-<p>See: <a href="https://guides.rubyonrails.org/active_record_callbacks.html">ActiveRecord Callbacks</a></p>
+    <h2 class="-two-column" id="reference">Reference</h2>
+
+<h3 id="deflate--inflate--concatenate">Deflate / Inflate / Concatenate</h3>
+<pre><code class="language-shell"># Deflate / Compress
+tar -czf archive.tar.gz /path/files
+</code></pre>
+
+<pre><code class="language-shell"># Inflate / Uncompress
+tar -xzf archive.tar.gz
+</code></pre>
+
+<pre><code class="language-shell"># Concatenate files into a single tar
+tar -cf archive.tar /path/files
+</code></pre>
+
+<pre><code class="language-shell"># Extract file to a defined directory
+tar -xzf archive.tar.gz -C /target/directory
+</code></pre>
+
+<pre><code class="language-shell"># Append a file to an existing archive
+tar -zu archive.tar.gz -C /target/file
+</code></pre>
+
+<h3 id="common-options">Common options</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>z</code></td>
+      <td>compress with gzip</td>
+    </tr>
+    <tr>
+      <td><code>c</code></td>
+      <td>create an archive</td>
+    </tr>
+    <tr>
+      <td><code>u</code></td>
+      <td>append files which are newer than the corresponding copy ibn the archive</td>
+    </tr>
+    <tr>
+      <td><code>f</code></td>
+      <td>filename of the archive</td>
+    </tr>
+    <tr>
+      <td><code>v</code></td>
+      <td>verbose, display what is inflated or deflated</td>
+    </tr>
+    <tr>
+      <td><code>a</code></td>
+      <td>unlike of <code>z</code>, determine compression based on file extension</td>
+    </tr>
+  </tbody>
+</table>
 
   </main>
 </div>
@@ -728,7 +284,7 @@ end
       <details class='comments-details'>
         <summary>
           <strong class='count'>
-            <span class='disqus-comment-count' data-disqus-identifier="rails-models" data-disqus-url='https://devhints.io/rails-models'>0 Comments</span>
+            <span class='disqus-comment-count' data-disqus-identifier="tar" data-disqus-url='https://devhints.io/tar'>0 Comments</span>
           </strong>
           <span class='suffix'>for this cheatsheet.</span>
           <span class='fauxlink'>Write yours!</span>
@@ -740,7 +296,7 @@ end
         </div>
       </details>
     </div>
-    <noscript data-js-disqus='{"host":"devhints.disqus.com","url":"https://devhints.io/rails-models","identifier":"rails-models"}'></noscript>
+    <noscript data-js-disqus='{"host":"devhints.disqus.com","url":"https://devhints.io/tar","identifier":"tar"}'></noscript>
   </section>
 
 
@@ -797,17 +353,19 @@ end
       <div class='group'>
         <div class='related-posts-group'>
           
-            <h3>Other Rails cheatsheets</h3>
+            <h3>Other CLI cheatsheets</h3>
           
 
           <ul class='related-post-list'>
             
               <li class='item related-post-item'>
-  <a href='./arel'>
-    <strong>Arel</strong>
+  <a href='./cron'>
+    <strong>Cron</strong>
     <span>
       cheatsheet
 
+      
+      <abbr class='attribute-peg -new-layout hint--bottom' data-hint='New layout!'><span></span></abbr>
       
     </span>
   </a>
@@ -815,11 +373,13 @@ end
 
             
               <li class='item related-post-item'>
-  <a href='./rails-controllers'>
-    <strong>Controllers</strong>
+  <a href='./homebrew'>
+    <strong>Homebrew</strong>
     <span>
       cheatsheet
 
+      
+      <abbr class='attribute-peg -new-layout hint--bottom' data-hint='New layout!'><span></span></abbr>
       
     </span>
   </a>
@@ -827,11 +387,13 @@ end
 
             
               <li class='item related-post-item'>
-  <a href='./rails-forms'>
-    <strong>Form helpers</strong>
+  <a href='./httpie'>
+    <strong>httpie</strong>
     <span>
       cheatsheet
 
+      
+      <abbr class='attribute-peg -new-layout hint--bottom' data-hint='New layout!'><span></span></abbr>
       
     </span>
   </a>
@@ -839,11 +401,13 @@ end
 
             
               <li class='item related-post-item'>
-  <a href='./rails-helpers'>
-    <strong>Helpers</strong>
+  <a href='./adb'>
+    <strong>adb (Android Debug Bridge)</strong>
     <span>
       cheatsheet
 
+      
+      <abbr class='attribute-peg -new-layout hint--bottom' data-hint='New layout!'><span></span></abbr>
       
     </span>
   </a>
@@ -851,11 +415,13 @@ end
 
             
               <li class='item related-post-item'>
-  <a href='./rails-i18n'>
-    <strong>i18n</strong>
+  <a href='./composer'>
+    <strong>composer</strong>
     <span>
       cheatsheet
 
+      
+      <abbr class='attribute-peg -new-layout hint--bottom' data-hint='New layout!'><span></span></abbr>
       
     </span>
   </a>
@@ -863,11 +429,13 @@ end
 
             
               <li class='item related-post-item'>
-  <a href='./rails-migrations'>
-    <strong>Migrations</strong>
+  <a href='./fish-shell'>
+    <strong>Fish shell</strong>
     <span>
       cheatsheet
 
+      
+      <abbr class='attribute-peg -new-layout hint--bottom' data-hint='New layout!'><span></span></abbr>
       
     </span>
   </a>
